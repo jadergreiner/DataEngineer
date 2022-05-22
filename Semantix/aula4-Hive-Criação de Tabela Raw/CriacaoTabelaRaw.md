@@ -10,6 +10,18 @@
     hdfs dfs -cat /user/aluno/jader/data/populacao/populacaoLA.csv | head -n 3
   
 2. Listar os bancos de dados no Hive
+  
+  
+    -- saindo do nome nome, pressionando CTRL + D
+    -- conectando ao hive
+    docker exec -it hive-server bash
+    -- para conectar aos bancos do hive, acessar o beeline. 
+    -- Na dúvida sobre o comando, pode usar o help
+    beeline --help
+    -- conectando ao banco local
+    beeline -u jdbc:hive2://localhost:10000
+    -- listando os bancos de dados do Hive
+    show databases;
 
 3. Criar o banco de dados <nome>
 
