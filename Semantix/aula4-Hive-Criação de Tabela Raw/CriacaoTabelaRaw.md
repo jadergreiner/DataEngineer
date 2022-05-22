@@ -4,7 +4,10 @@
   
     -- criando o diretório e depois enviando o arquivo
     hdfs dfs -mkdir /user/aluno/jader/data/populacao
-    hdfs dfs -put /input/exercises-data/populacaoLA/populacaoLA.csv /user/aluno/jader/populacao
+    -- enviando o arquivo
+    hdfs dfs -put /input/exercises-data/populacaoLA/populacaoLA.csv /user/aluno/jader/data/populacao
+    -- verificando o conteúdo do arquivo
+    hdfs dfs -cat /user/aluno/jader/data/populacao/populacaoLA.csv | head -n 3
   
 2. Listar os bancos de dados no Hive
 
