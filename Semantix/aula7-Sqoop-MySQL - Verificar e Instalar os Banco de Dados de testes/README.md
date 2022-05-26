@@ -10,6 +10,12 @@
 
 3 . Instalar Banco de Dados de testes
 
+    -- como acessar o mysql que já está instalado neste docker database
+    -h > é a conexão
+    -u > é o usuário
+    -p > é a senha (padrão deste datanode 
+    mysql -h localhost -u root 
+    
     Diretório /db-sql - BD employees (Já existe)
       $ cd /db-sql  
 
