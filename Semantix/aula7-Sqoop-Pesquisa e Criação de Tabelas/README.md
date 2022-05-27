@@ -1,4 +1,4 @@
-#Sqoop -  Pesquisa e Criação de Tabelas
+# Sqoop -  Pesquisa e Criação de Tabelas
 
 Todos os comandos precisam ser executados pelo Sqoop.
 
