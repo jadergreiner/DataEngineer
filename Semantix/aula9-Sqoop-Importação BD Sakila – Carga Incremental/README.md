@@ -18,14 +18,14 @@ Realizar com uso do Sqoop - Importações no warehouse /user/hive/warehouse/db_t
 
 3 . Importar as tabelas cp_rental_append, cp_rental_id e cp_rental_date com 1 mapeador
 
-   sqoop import --table cp_rental_append --connect jdbc:mysql://database/sakila --username root --password secret -m 1 --warehouse-dir /user/hive/warehouse/db_test3
-   
-   sqoop import --table cp_rental_id --connect jdbc:mysql://database/sakila --username root --password secret -m 1 --warehouse-dir /user/hive/warehouse/db_test3
-   
-   sqoop import --table cp_rental_date --connect jdbc:mysql://database/sakila --username root --password secret -m 1 --warehouse-dir /user/hive/warehouse/db_test3
-   
-   -- consultando os dados no HDFS
-   hdfs dfs -ls -h -R /user/hive/warehouse/db_test3
+       sqoop import --table cp_rental_append --connect jdbc:mysql://database/sakila --username root --password secret -m 1 --warehouse-dir /user/hive/warehouse/db_test3
+
+       sqoop import --table cp_rental_id --connect jdbc:mysql://database/sakila --username root --password secret -m 1 --warehouse-dir /user/hive/warehouse/db_test3
+
+       sqoop import --table cp_rental_date --connect jdbc:mysql://database/sakila --username root --password secret -m 1 --warehouse-dir /user/hive/warehouse/db_test3
+
+       -- consultando os dados no HDFS
+       hdfs dfs -ls -h -R /user/hive/warehouse/db_test3
 
 Realizar com uso do MySQL
 
