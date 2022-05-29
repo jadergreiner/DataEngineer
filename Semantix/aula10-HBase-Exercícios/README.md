@@ -5,7 +5,7 @@
 Chave: id <br>
 Família de Coluna: produto e fornecedor
 
-<img src = "Semantix/img/HBase-tab-exercicio.png">
+<img src = "../img/HBase-tab-exercicio.png">
 
 2 . Listar as tabelas e verificar a estrutura da tabela ‘controle’
 
