@@ -10,7 +10,9 @@
 
 3. Criar a collection produto no bd com seu nome.
 
-        -- dica. Se digitarmos db. e depois dar um TAB, podemos ver todas as funç
+        -- dica. Se digitarmos db. e depois dar um TAB, podemos ver todas as funções
+        -- ele é autocomplete com o TAB
+        -- se não souber os parâmetros, pode apagar os parenteses e dar um entre que ele mostra as opç
 
         db.createCollection('produto')
 
