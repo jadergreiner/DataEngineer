@@ -51,13 +51,26 @@
 
 - a) Nome = mouse
 
+        db.produto.find({nome: "mouse"})
+
 - b) Quantidade = 20 e apresentar apenas o campo nome
+
+        db.produto.find({qtd: {$eq: 20}}, {nome: 1, _id: 0})
 
 - c) Quantidade <= 20 e apresentar apenas os campos nome e qtd
 
+       db.produto.find({qtd: {$lte: 20}}, {nome: 1,qtd: 1,_id: 0})
+
 - d) Quantidade entre 10 e 20
+
+      db.produto.find({qtd: {$gte: 10, $lte: 20}})
 
 - e) Conexão = USB e não apresentar o campo _id e qtd
 
+      -- para pesquisar dentro das chaves, obrigatoriamente precisa usar as aspas 
+      db.produto.find({'descricao.conexao': "USB"},{_id: 0, qtd: 0})
+
 - f) SO que contenha “Windows” ou “Windows 10”
+
+      db.produto.find({'descricao.so': {$in: ["Windows", "Windows 10" ]}})
 
