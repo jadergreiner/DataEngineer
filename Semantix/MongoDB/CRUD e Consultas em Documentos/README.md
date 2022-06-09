@@ -10,6 +10,8 @@
 
 3. Criar a collection produto no bd com seu nome.
 
+        -- dica. Se digitarmos db. e depois dar um TAB, podemos ver todas as funç
+
         db.createCollection('produto')
 
 4. Listar os banco de dados.
