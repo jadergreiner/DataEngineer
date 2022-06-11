@@ -2,6 +2,8 @@
 
 1. Mostrar todos os documentos da collection produto do banco de dados seu nome
 
+        db.produto.find()
+
 2. Criar o index “query_produto” para pesquisar o campo nome do produto em ordem alfabética
 
 3. Pesquisar todos os índices da collection produto
