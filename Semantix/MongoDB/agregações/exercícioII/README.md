@@ -27,7 +27,7 @@
         -- para cada aluno os dados do curso
         -- poderia ser o contrário. Para cada curso, mostrar os alunos
         
-<img src= "./img/03.png">        
+<img src= "./img/3.png">        
         
 4. Realizar o left outer join da collection alunos e cursos, quando o id_curso dos 2 forem o mesmo e visualizar apenas os seguintes campos
 
@@ -42,7 +42,7 @@ Cursos: id_curso, id_unidade, nome
       "curso.nome": 1,
     }
     
-<img src= "./img/04.png">            
+<img src= "./img/4.png">            
 
 ## Código final completo
 
