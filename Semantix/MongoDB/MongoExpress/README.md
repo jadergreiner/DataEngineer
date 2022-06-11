@@ -36,6 +36,12 @@ Na página inicial clicar em cima do documento.
 
 7. Criar um index para o campo cidade em ordem alfabética
 
+<img src=".\img\07-update.png">
+
 8. Deletar o documento com o nome João
 
+<img src=".\img\08-update.png">
+
 9. Deletar a collection clientes
+
+<img src=".\img\09-update.png">
