@@ -39,6 +39,12 @@
 
 ## 6. Criar um index para o campo cidade em ordem alfabética
 
+<img src = "./img/06.png">
+
 ## 7. Deletar o documento com o nome João
 
+<img src = "./img/07.png">
+
 ## 8. Deletar a collection clientes
+
+<img src = "./img/08.png">
