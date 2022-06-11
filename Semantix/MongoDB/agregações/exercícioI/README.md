@@ -59,12 +59,13 @@
         }}]
         
 <img src = "./img/06.png">
+<img src = "https://github.com/jadergreiner/DataEngineer/blob/020f4e6e7792812c240b0ad85c487912ff2af940/Semantix/MongoDB/MongoDB%20Compass/img/06.png">
 
 7. Visualizar todos os documentos do “nível”: “M”
 
         -- aqui é só aplicar um match
 
-<img src = "./img/07.png">
+<img src = "https://github.com/jadergreiner/DataEngineer/blob/020f4e6e7792812c240b0ad85c487912ff2af940/Semantix/MongoDB/MongoDB%20Compass/img/07.png">
 
 8. Visualizar o último ano que teve cada curso (id_curso) dos níveis “M”
 
@@ -77,21 +78,21 @@
           }
         }
         
-<img src = "./img/08.png">
+<img src = "https://github.com/jadergreiner/DataEngineer/blob/020f4e6e7792812c240b0ad85c487912ff2af940/Semantix/MongoDB/MongoDB%20Compass/img/08.png">
 
 9. Visualizar o último ano que teve cada curso (id_curso) dos níveis “M”, ordenados pelos anos mais novos de cada curso
 
         -- mantém os estágios do 8
         -- adiciona um novo estágio de ordenação (sort) com opção -1
         
-<img src = "./img/09.png">
+<img src = "https://github.com/jadergreiner/DataEngineer/blob/020f4e6e7792812c240b0ad85c487912ff2af940/Semantix/MongoDB/MongoDB%20Compass/img/09.png">
 
 10. Visualizar o último ano que teve os 5 últimos cursos (id_curso) dos níveis “M”, ordenados pelos anos mais novos
 
         -- mantém os estágios
         -- adiciona um novo estágio de limit
         
-<img src = "./img/10.png">        
+<img src = "https://github.com/jadergreiner/DataEngineer/blob/020f4e6e7792812c240b0ad85c487912ff2af940/Semantix/MongoDB/MongoDB%20Compass/img/10.png">
 
 ## Arquivo final completo
 
