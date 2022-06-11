@@ -10,7 +10,7 @@
        -- db.produto.CreateIndex({},{})
        -- primeira chave é o campo escolhido e a segunda chave é o nome
        -- quero pesquisar pelo nome em ordem alfabética. Se fosse descrescente seria -1
-       db.produto.CreateIndex({nome: 1},{name: "query_produto"})
+       db.produto.createIndex({nome: 1},{name: "query_produto"})
 
 3. Pesquisar todos os índices da collection produto
 
