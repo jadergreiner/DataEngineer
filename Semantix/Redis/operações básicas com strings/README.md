@@ -56,6 +56,8 @@
 13. Verificar a persistência da chave "usuario:nome"
 
         ttl usuario:nome
+        
+        -- retornando -1 significa que ela está sempre ativa
 
 14. Definir para a chave "views:qtd" ter persistência para sempre
 
