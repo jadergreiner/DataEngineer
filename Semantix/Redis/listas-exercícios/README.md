@@ -27,7 +27,7 @@ Final da lista “Carol”
 
 5. Redefinir o tamanho da lista, removendo o primeiro elemento (Sem usar o pop)
 
-        ltrim 1 2
+        ltrim 1 -1
 
 6. Visualizar o tamanho da lista
 
@@ -44,11 +44,13 @@ Primeiro
         rpop views:ultimo_usuario
         
 Primeiro com bloqueio de 5 segundos se a lista estiver vazia
-
-        -- primeiro vamos gerar o erro pois a lista está vazia
-        lpop views:ultimo_usuario
-        
+  
         -- para aguardar usamos o "b" na frente e o tempo
         blpop views:ultimo_usuario 5 
         
 Primeiro com bloqueio de 5 segundos se a lista estiver vazia
+
+        -- primeiro vamos gerar null pois a lista está vazia
+        lpop views:ultimo_usuario
+        
+        blpop views:ultimo_usuario 5 
