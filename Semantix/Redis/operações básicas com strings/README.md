@@ -23,7 +23,7 @@
 
 5. Verificar o tipo da chave "usuario:sobrenome"
 
-        type usuario:nome
+        type usuario:sobrenome
 
 6. Criar a chave "views:qtd" e atribua o valor 100
 
