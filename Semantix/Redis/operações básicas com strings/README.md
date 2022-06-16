@@ -31,7 +31,7 @@
 
 7. Incremente o valor em 10 da chave "views:qtd"
 
-        incr views:qtd 10
+        incrby views:qtd 10
 
 8. Busque a chave "views:qtd"
 
