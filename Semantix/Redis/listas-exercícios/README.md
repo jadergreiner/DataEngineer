@@ -6,7 +6,16 @@ Final da lista “Joao”
 Final da lista “Ana”
 Inicio da lista “Carlos”
 Final da lista “Carol”
+
+    rpush views:ultimo_usuario Joao
+    rpush views:ultimo_usuario Ana
+    lpush views:ultimo_usuario Carlos
+    rpush views:ultimo_usuario Carol
+    
+    
 2. Visualizar todos os elementos da lista
+
+        lrange views:ultimo_usuario 0 -1
 
 3. Visualizar todos os elementos da lista, com exceção do último
 
