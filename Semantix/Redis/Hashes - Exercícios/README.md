@@ -1,24 +1,57 @@
 # Exercícios - Hashes
 
-1. Deletar a chave “usuario:100”
+1 . Deletar a chave “usuario:100”
+
+    del usuario:100
 
 2. Criar uma chave “usuario:100” do tipo hash com a seguinte estrutura
 
 nome – Augusto
 estado – SP
 views – 10
-3. Visualizar todas as chaves e valores
 
-4. Contar a quantidade de campos
+    -- para hash temos duas opções 
+    -- hset para único valor
+    -- hmset para múltiplos valores
+    
+    hmset usuario:100 nome Augusto estado SP views 10
+            
+3 . Visualizar todas as chaves e valores
 
-5. Visualizar apenas o nome e views
+    hgetall usuario:100
 
-6. Contar o tamanho do valor do campo nome
+4 . Contar a quantidade de campos
 
-7. Incrementar em 2 o valor do campo views
+    hlen usuario:100
 
-8. Visualizar apenas os campos
+5 . Visualizar apenas o nome e views
 
-9. Visualizar apenas os valores
+    -- para visualizar apenas um campo usamos hget
+    -- mais de um campo usamos hmget
+    
+    hmget usuario:100 nome views
 
-10. Deletar o campo estado
+6 . Contar o tamanho do valor do campo nome
+
+    hstrlen usuario:100 nome
+
+7 . Incrementar em 2 o valor do campo views
+
+    hincrby usuario:100 views 2
+    
+    -- o comando para incrementar ou decrementar é o mesmo. Pode informar qualquer valor positivo ou negativo
+
+8 . Visualizar apenas os campos
+
+    hkeys usuario:100
+
+9 . Visualizar apenas os valores
+
+    hvals usuario:100
+
+10 . Deletar o campo estado
+
+    hdel usuario:100 estado
+    
+    -- para confirmar se removeu, pode dar um get all    
+    hgetall usuario:100
