@@ -33,7 +33,7 @@ Msg 3
 4 . Criar um assinante para receber as mensagens dos canais com o padrão noticias:*
 
     -- terminal 1
-    publish noticias:*
+    psubscribe noticias:*
     
     -- o asterisco serve como geral
 
