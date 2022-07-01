@@ -1,5 +1,9 @@
 # Kafka por Linha de Comando
 
+    -- para testar se a conexão e o Kakka está rodando podemos listar os tópicos
+    -- depois de entrar no broker digitar
+    kafka-topics --bootstrap-server localhost:9092 --list
+
 1 . Criar o tópico msg-cli com 2 partições e 1 réplica
     
     kafka-topics --bootstrap-server localhost:9092 --topic msg-cli --create --partitions 2 --replication-factor 1
