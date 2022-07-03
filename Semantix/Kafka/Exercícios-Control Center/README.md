@@ -1,6 +1,8 @@
 # Control Center
 
-O Control Center é uma interface gráfica do Kakfa. Dispoível apenas na versão Community.
+#### O Control Center é uma interface gráfica do Kakfa. Dispoível apenas na versão Community do Confluent.
+
+###### Depois do cluster ativo, seu acesso é pelo endereço: http://localhost:9021/
 
 
 1. Criar um tópico com o nome msg-rapida com 4 partições, 1 replicação e deletar os dados após 5 minutos de uso.
