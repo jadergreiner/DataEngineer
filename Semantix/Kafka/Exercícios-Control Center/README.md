@@ -1,5 +1,8 @@
 # Control Center
 
+O Control Center é uma interface gráfica do Kakfa. Dispoível apenas na versão Community.
+
+
 1. Criar um tópico com o nome msg-rapida com 4 partições, 1 replicação e deletar os dados após 5 minutos de uso.
 
 2. Produzir e consumir 2 mensagens para o tópico msg-rapida
