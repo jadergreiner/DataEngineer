@@ -22,15 +22,15 @@
 
 3 . Qual o nome do cluster?
 
-    <img src="q3.gif">
+<img src="q3.gif">
 
 4 . Quantos tópicos existem no cluster?
 
-    <img src="q4.gif">
+<img src="q4.gif">
 
 5 . Quantas partições existem o tópico msg-cli?
 
-     <img src="q5.gif">
+<img src="q5.gif">
 
 6 . Todas as réplicas estão sincronizadas no tópico msg-cli?
 
@@ -38,24 +38,24 @@
 
 7 . Qual a política de limpeza do tópico msg-cli?
 
-     <img src="q7.gif">
+<img src="q7.gif">
 
 8 . Alterar a política de limpeza do tópico msg-cli para deletar depois de um ano.
 
      -- não temos a opçaõ de 1 ano. Digitamos e o Control Center já sugere
-     <img src="q8.gif">
+<img src="q8.gif">
 
 9 . Qual o diretório de armazenamento de logs do cluster?
     
-     <img src="q9.gif">
+<img src="q9.gif">
 
 10 . Por padrão os dados são mantidos por quantos dias no Kafka?
 
      -- por padrao o Kafka armazena por 7 dias
      -- dividindo as 168 horas por 24, equivale aos 7 dias
      -- na confguração o resultado é demonstrado em milisegundos(ms)
-     <img src="q10.gif">
+<img src="q10.gif">
 
 11 . Visualizar os gráficos de produção e consumo de dados do tópico msg-rapida.
 
-    <img src="q11.gif"> 
+<img src="q11.gif"> 
