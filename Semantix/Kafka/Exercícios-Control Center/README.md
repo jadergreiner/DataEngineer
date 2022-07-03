@@ -5,24 +5,57 @@
 ###### Depois do cluster ativo, seu acesso é pelo endereço: http://localhost:9021/
 
 
-1. Criar um tópico com o nome msg-rapida com 4 partições, 1 replicação e deletar os dados após 5 minutos de uso.
+1 . Criar um tópico com o nome msg-rapida com 4 partições, 1 replicação e deletar os dados após 5 minutos de uso.
 
-2. Produzir e consumir 2 mensagens para o tópico msg-rapida
+<img src="q1.gif">
 
-3. Qual o nome do cluster?
+2 . Produzir e consumir 2 mensagens para o tópico msg-rapida
 
-4. Quantos tópicos existem no cluster?
+    -- Para produzir mensagens utilizaremos o terminal através de nosso container
+    -- inicialmente vamos disparar o consumidor    
+    kafka-console-consumer --bootstrap-server localhost:9092 --topic msg-rapida
+    
+    -- em outro terminal vamos disparar o produtor
+    kafka-console-producer --broker-list localhost:9092 --topic msg-rapida
 
-5. Quantas partições existem o tópico msg-cli?
+    -- aqui no producer enviamos a mensagem que será recebida no consumer       
 
-6. Todas as réplicas estão sincronizadas no tópico msg-cli?
+3 . Qual o nome do cluster?
 
-7. Qual a política de limpeza do tópico msg-cli?
+    <img src="q3.gif">
 
-8. Alterar a política de limpeza do tópico msg-cli para deletar depois de um ano.
+4 . Quantos tópicos existem no cluster?
 
-9. Qual o diretório de armazenamento de logs do cluster?
+    <img src="q4.gif">
 
-10. Por padrão os dados são mantidos por quantos dias no Kafka?
+5 . Quantas partições existem o tópico msg-cli?
 
-11. Visualizar os gráficos de produção e consumo de dados do tópico msg-rapida.
+     <img src="q5.gif">
+
+6 . Todas as réplicas estão sincronizadas no tópico msg-cli?
+
+    Já mostramos a réplica no ecercício 5.
+
+7 . Qual a política de limpeza do tópico msg-cli?
+
+     <img src="q7.gif">
+
+8 . Alterar a política de limpeza do tópico msg-cli para deletar depois de um ano.
+
+     -- não temos a opçaõ de 1 ano. Digitamos e o Control Center já sugere
+     <img src="q8.gif">
+
+9 . Qual o diretório de armazenamento de logs do cluster?
+    
+     <img src="q9.gif">
+
+10 . Por padrão os dados são mantidos por quantos dias no Kafka?
+
+     -- por padrao o Kafka armazena por 7 dias
+     -- dividindo as 168 horas por 24, equivale aos 7 dias
+     -- na confguração o resultado é demonstrado em milisegundos(ms)
+     <img src="q10.gif">
+
+11 . Visualizar os gráficos de produção e consumo de dados do tópico msg-rapida.
+
+    <img src="q11.gif"> 
