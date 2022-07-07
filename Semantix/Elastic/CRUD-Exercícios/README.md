@@ -1,5 +1,8 @@
 # CRUD
 
+    -- Usaremos o Dev tools do Kibana
+<img src = "e1.gif">
+
 1 . Criar o índice produto e inserir os seguintes documentos:
 
 - _id: 1, "nome": "mouse", "qtd": 50, "descricao": "com fio USB, compatível com Windows, Mac e Linux"
