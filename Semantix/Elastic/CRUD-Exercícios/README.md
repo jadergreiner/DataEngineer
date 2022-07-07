@@ -7,6 +7,10 @@
 - _id: 3, "nome": "memória ram", "qtd": 10, "descricao": "8GB, DDR4"
 - _id: 4, "nome": "cpu", "qtd": 15, "descricao": "i5, 2.5Ghz"
 
+    -- Usaremos o Dev Tools do Kibana. Após ativar o cluster abrir no console o Kibana
+    -- Management > Dev Tools
+
+
 2 . Verificar se existe o documento com  id 3
 
 3 . Alterar o valor do atributo qtd para 30 do documento com id 3
