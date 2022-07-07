@@ -85,3 +85,8 @@
 6. Contar quando documentos tem o índice produto.
 
         GET produto/_count
+        
+### Visão geral do Dev Tools - ele executa por blocos
+
+<img src = "e4.gif">
+
