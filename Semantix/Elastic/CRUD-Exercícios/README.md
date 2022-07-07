@@ -14,3 +14,5 @@
 4 . Buscar o documento com id 1
 
 5 . Deletar o documento com id 4
+
+6. Contar quando documentos tem o índice produto.
