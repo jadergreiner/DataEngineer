@@ -19,15 +19,17 @@
 
 - Contar o número de documentos de cada um dos novos índices
 
-      GET populacao/_search
-
-      GET concessionaria/_search
-
-- Mostrar todos os documentos de cada um dos novos índices
-
       GET populacao/_count
 
       GET concessionaria/_count
+
+- Mostrar todos os documentos de cada um dos novos índices
+      
+      GET populacao/_search
+
+      GET concessionaria/_search
+      
+      -- notar que nem todos os documentos são exibidos. Verificare sobre a paginação dos resultados em outros exemplos.
 
 ### Vídeo demonstrativo
 <img src = "i3.gif">
