@@ -4,8 +4,14 @@
 
 - Índice: concessionaria2
   - dataset/cars.bulk
+  
+<img src = "i1.gif"> 
+<br>
 - Índice: populacao
   - dataset/populacaoLA.csv
+
+<img src = "i2.gif"> 
+<br>
   
 2 . Executar as consultas
 
