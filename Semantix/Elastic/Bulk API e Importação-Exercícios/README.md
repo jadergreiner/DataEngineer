@@ -2,14 +2,16 @@
 
 1 . Importar os dados na Guia Arquivos para os índices
 
-- Índice: concessionaria2
+### - Índice: concessionaria2
   - dataset/cars.bulk
   
 <img src = "i1.gif"> 
 <br>
-- Índice: populacao
-  - dataset/populacaoLA.csv
 
+### - Índice: populacao
+
+  - dataset/populacaoLA.csv
+<br>
 <img src = "i2.gif"> 
 <br>
   
