@@ -26,6 +26,9 @@ d) Nome = hd e descrição = windows
 e) Nome = memória e descrição = GB
 
     GET produto/_search?q=nome:memoria&q=descricao:GB
+    
+    -- aqui não retorna por o "GB" está colado no nome. Mas podemos usar o "*" como buscar no texto
+    GET produto/_search?q=nome:memoria&q=descricao:*GB
 
 ### 2 . Pesquisar todos os índices, limitando a pesquisa em 5 documentos em cada página e visualizar a 4 página (Documentos entre 16 á 20 )
 
