@@ -46,14 +46,14 @@ Realizar todas as buscas a seguir no índice produto
 
 4. Buscar os documentos que contenham pelo menos 50 % da seguinte lista de palavras: “Windows”; “Linux” e “USB” no atributo descrição
 
-    GET produto/_search
-    {   
-      "query": {
-        "match": {
-          "descricao": {
-            "query": "windows linux usb",
-            "minimum_should_match": "50%"
+        GET produto/_search
+        {   
+          "query": {
+            "match": {
+              "descricao": {
+                "query": "windows linux usb",
+                "minimum_should_match": "50%"
+              }
+            }
           }
         }
-      }
-    }
