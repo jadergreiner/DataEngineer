@@ -35,8 +35,10 @@ b) Mostrar os documentos com o atributo "Median Age" maior que 70
 
 c) Mostrar os documentos 50 (Zip Code: 90056) à 60 (Zip Code: 90067) do índice de populacao
 
+        -- por padrão a paginação mostra 10 registros. Vou incluir opcionalmente o atributo size para mostrar 20 registros por página
         GET populacao/_search
         {
+          "size": 20,
           "query": {
             "range": {
               "Zip Code": {
@@ -51,6 +53,35 @@ c) Mostrar os documentos 50 (Zip Code: 90056) à 60 (Zip Code: 90067) do índice
 
 4. Executar as consultas no índice bolsa
 
+        -- conhecendo os campos do dataset e os tipos
+        GET bolsa/_mapping
+
 a) Visualizar os documentos do dia 2019-01-01 à 2019-03-01. (hits = 9)
 
+        GET bolsa/_search
+        {
+          "query": {
+            "range": {
+              "timestamp": {
+                "gte": "2019-01-01",
+                "lte": "2019-03-01",
+                "format": "yyyy-MM-dd"
+              }
+            }
+          }
+        }                
+
 b) Visualizar os documentos do dia 2019-04-01 até agora. (hits = 3)
+
+        GET bolsa/_search
+        {
+          "query": {
+            "range": {
+              "timestamp": {
+                "gte": "2019-04-01",
+                "lte": "now",
+                "format": "yyyy-MM-dd"
+              }
+            }
+          }
+        }
