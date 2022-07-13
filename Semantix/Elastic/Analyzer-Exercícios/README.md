@@ -111,4 +111,22 @@ Após o reindex, dar um **GET** em produto
 
 c) Buscar a palavra “compativel” no campo descricao.original (hits = 0)
 
+        GET produto/_search
+        {
+          "query": {
+            "match": {
+              "descricao.original": "compativel"
+            }
+          }
+        }
+
 d) Buscar a palavra “compativel” no campo descricao
+
+    GET produto/_search
+    {
+      "query": {
+        "match": {
+          "descricao": "compativel"
+        }
+      }
+    }
