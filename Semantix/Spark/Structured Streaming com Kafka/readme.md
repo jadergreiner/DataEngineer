@@ -1,1 +1,1 @@
-#  Arquivo Jupyter com a resoluç
+#  Arquivo Jupyter com a resolução das atividades
